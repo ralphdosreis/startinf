@@ -14,16 +14,23 @@ const SectionTopicos = () => {
               Escolha um tema ou comece a conversar pelo chat.
             </p>
           </div>
-          {/* <div class="cards">
-            <div class="card">
-              <img src="/src/img/icon-cifrão.svg" alt="" />
-              <h2>Captação de Recursos</h2>
-              <p>
+          <div class="cards">
+            <div class="card-bg">
+              <div>
+              <img
+                src="/src/img/icon-cifrão.svg"
+                width="40px"
+                height="40px"
+                alt=""
+              />
+              <h2 class="titulo-card">Captação de Recursos</h2>
+              <p class="texto-card">
                 Descubra editais de fomento e programas <br />
                 de aceleração para sua Startup.
               </p>
+              </div>
             </div>
-        </div> */}
+          </div>
         </div>
       </section>
     </>
