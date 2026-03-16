@@ -1,0 +1,55 @@
+.header-bg {
+  background:#172028;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.logo p {
+  font-size: .75rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #7F909E;
+}
+
+.header-menu .botao {
+  font-family: "Poppins";
+  color: #172028;
+  background: #CE5E14;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.header-menu a {
+  font-family: "Poppins";
+  color: #fff;
+  padding: .5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}

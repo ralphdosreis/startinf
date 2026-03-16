@@ -1,0 +1,21 @@
+.container {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  color: #172028;
+  background: #CE5E14;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.separador-sec {
+  content: "";
+  width: max-content;
+  background: #232F3A;
+  height: 1px;
+}
