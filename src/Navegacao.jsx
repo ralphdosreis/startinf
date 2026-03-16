@@ -5,8 +5,12 @@ const Navegacao = () => {
     <>
       <section class="nav-bg">
         <div class="nav container">
-          <a href="">Explorar Tópicos</a>
-          <a href="">Chat</a>
+          <a class="botao" href="">
+            Explorar Tópicos
+          </a>
+          <a class="botao-desab" href="">
+            Chat
+          </a>
         </div>
       </section>
     </>

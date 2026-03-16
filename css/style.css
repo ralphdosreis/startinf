@@ -1,3 +1,5 @@
 @import "/css/global/header.css";
 @import "/css/global/global.css";
-@import "/css/utilidades/componentes.css"
+@import "/css/utilidades/componentes.css";
+@import "/css/navegação.css";
+@import "/css/sec-topicos.css";

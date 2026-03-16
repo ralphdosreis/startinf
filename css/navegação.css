@@ -1,0 +1,13 @@
+.nav-bg {
+  background: #172028;
+}
+
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+

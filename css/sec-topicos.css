@@ -1,0 +1,10 @@
+.sec-bg {
+  background: #0C1217;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sec-topicos {
+  padding-top: 20px;
+}

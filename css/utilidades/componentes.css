@@ -7,15 +7,51 @@
 }
 
 .botao {
-  color: #172028;
-  background: #CE5E14;
-  padding: 1rem 2rem;
-  font-size: 1.125rem;
+  display: inline-block;
+  color: #CE5E14;
+  background: #232F3A;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: .875rem;
+  padding: .5rem 1rem;
+}
+
+.botao.topicos::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  background: url("/src/img/icon-topicos.svg");
+}
+
+.botao-desab {
+  font-family: "Poppins";
+  font-size: .875rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .separador-sec {
-  content: "";
-  width: max-content;
-  background: #232F3A;
   height: 1px;
+  border: none;
+  background: #232F3A;
+  width: 100%;
+  margin: 0;
+}
+
+.titulo {
+  font-family: "Poppins";
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitulo {
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #7F909E;
+  font-weight: 400;
+  text-align: center;
 }
