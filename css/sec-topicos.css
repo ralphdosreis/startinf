@@ -9,9 +9,9 @@
   padding-top: 20px;
 }
 
-.card-bg {
-  background: #3C4751;
-  border-radius: 20px;
+.cards {
+  display: flex;
+  gap: 20px;
 }
 
 .titulo-card {
@@ -19,7 +19,9 @@
   font-size: 1rem;
   line-height: 1.3;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .texto-card {
@@ -27,4 +29,12 @@
   font-size: 1rem;
   color: #7F909E;
   font-weight: 400;
+}
+
+.container-card {
+  width: 340px;
+  background: #161F27;
+  border-radius: 20px;
+  border: 1px solid #3C4751;
+  padding: 20px;
 }
