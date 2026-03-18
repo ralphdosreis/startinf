@@ -39,7 +39,7 @@ const SectionTopicos = () => {
               </p>
             </div>
             <div class="container-card">
-              <img src="./src/img/icon-cifrão.svg" alt="" />
+              <img src="./src/img/icon-lei.svg" alt="" />
               <h2 class="titulo-card">Captação de Recursos</h2>
               <p class="texto-card">
                 Descubra editais de fomento e programas de aceleração para sua
@@ -47,7 +47,7 @@ const SectionTopicos = () => {
               </p>
             </div>
             <div class="container-card">
-              <img src="./src/img/icon-cifrão.svg" alt="" />
+              <img src="./src/img/icon-pitch.svg" alt="" />
               <h2 class="titulo-card">Captação de Recursos</h2>
               <p class="texto-card">
                 Descubra editais de fomento e programas de aceleração para sua
@@ -55,7 +55,7 @@ const SectionTopicos = () => {
               </p>
             </div>
             <div class="container-card">
-              <img src="./src/img/icon-cifrão.svg" alt="" />
+              <img src="./src/img/icon-market.svg" alt="" />
               <h2 class="titulo-card">Captação de Recursos</h2>
               <p class="texto-card">
                 Descubra editais de fomento e programas de aceleração para sua
