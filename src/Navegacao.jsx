@@ -5,10 +5,10 @@ const Navegacao = () => {
     <>
       <section class="nav-bg">
         <div class="nav container">
-          <a class="botao" href="">
+          <a class="botao topicos" href="">
             Explorar Tópicos
           </a>
-          <a class="botao-desab" href="">
+          <a class="botao-des chat" href="">
             Chat
           </a>
         </div>

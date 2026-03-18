@@ -25,7 +25,7 @@ const Header = () => {
                 <a href="">Entrar</a>
               </li>
               <li>
-                <a class="botao" href="">
+                <a class="botao input" href="">
                   Cadastrar
                 </a>
               </li>
