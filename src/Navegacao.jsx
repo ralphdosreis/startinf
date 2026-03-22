@@ -1,19 +1,21 @@
 import React from 'react';
+import { useLocation, Link } from 'react-router-dom';
 
 const Navegacao = () => {
+  const location = useLocation();
+  const isChat = location.pathname === '/chat';
+
   return (
-    <>
-      <section class="nav-bg">
-        <div class="nav container">
-          <a class="botao topicos" href="">
-            Explorar Tópicos
-          </a>
-          <a class="botao-des chat" href="">
-            Chat
-          </a>
-        </div>
-      </section>
-    </>
+    <section className="nav-bg">
+      <div className="nav container">
+        <Link className={isChat ? 'botao-des topicos' : 'botao topicos'} to="/">
+          Explorar Tópicos
+        </Link>
+        <Link className={isChat ? 'botao chat' : 'botao-des chat'} to="/chat">
+          Chat
+        </Link>
+      </div>
+    </section>
   );
 };
 
