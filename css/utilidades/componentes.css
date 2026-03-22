@@ -160,3 +160,28 @@
   opacity: 0.4;
   margin-top: 10px;
 }
+
+.botao.chat::before 
+{
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url('/src/img/icon-chat.svg');
+}
+
+.chat-send 
+{
+  background: #CE5E14;
+}
+
+.botao-des.topicos::before 
+{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url('/src/img/icon-topicos.svg');
+}
