@@ -4,7 +4,7 @@ const SectionTopicos = () => {
   return (
     <>
       <section class="sec-bg">
-        <div class="sec-topicos container">
+        <div class="secao container">
           <div>
             <h1 class="titulo">
               Em que etapa da sua <br />

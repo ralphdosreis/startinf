@@ -5,8 +5,13 @@
   overflow-y: auto;
 }
 
-.sec-topicos {
-  padding-top: 20px;
+.secao {
+  padding-top: 40px;
+}
+
+.secao-texto {
+  display: grid;
+  gap: 20px;
 }
 
 .cards {

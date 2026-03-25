@@ -75,90 +75,16 @@
   font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
+  max-width: 70ch;
+  justify-self: center;
 }
 
 /* Chat Page */
 .chat-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: calc(100vh - 116px);
-  padding: 0 1rem;
-}
-
-.chat-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-top: 5rem;
-  gap: 1.25rem;
-  max-width: 640px;
-}
-
-.chat-hero h2 {
-  font-size: clamp(2rem, 5vw, 2.8rem);
-  font-weight: 700;
-  line-height: 1.15;
-}
-
-.chat-hero p {
-  font-size: 16px;
-  line-height: 1.65;
-  opacity: 0.6;
-  max-width: 520px;
-}
-
-.chat-input-wrap {
+  background: #0C1217;
   width: 100%;
-  max-width: 800px;
-  padding-bottom: 1.5rem;
-}
-
-.chat-input-box {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: #1e212b;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 14px 16px;
-}
-
-.chat-input-box:focus-within {
-  border-color: rgba(242, 101, 34, 0.5);
-}
-
-.chat-input {
-  flex: 1;
-  background: none;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  color: #fff;
-}
-
-.chat-input::placeholder {
-  opacity: 0.45;
-}
-
-.chat-send {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-
-.chat-disclaimer {
-  text-align: center;
-  font-size: 12px;
-  opacity: 0.4;
-  margin-top: 10px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .botao.chat::before 
@@ -171,11 +97,6 @@
   background: url('/src/img/icon-chat.svg');
 }
 
-.chat-send 
-{
-  background: #CE5E14;
-}
-
 .botao-des.topicos::before 
 {
   content: "";
@@ -184,4 +105,13 @@
   height: 20px;
   margin-right: 5px;
   background: url('/src/img/icon-topicos.svg');
+}
+
+.pesquisa-box {
+  background: #172028;
+  height: 50px;
+  border-radius: 50px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
 }
