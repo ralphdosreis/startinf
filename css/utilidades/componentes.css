@@ -21,6 +21,14 @@
   margin: 20px auto;
 }
 
+.secao-topicos {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: calc(100vh - 131px);
+}
+
 .container-box {
   display: flex;
   flex-direction: column;
@@ -31,7 +39,7 @@
 
 .box-pesquisa {
   position: fixed;
-  bottom: 40px;
+  bottom: 45px;
   display: flex;
   align-items: center;
   width: 80%;
@@ -61,24 +69,29 @@
 .icon-file {
   width: 20px;
   height: 20px;
-  background-size: cover;
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: flex;
 }
 
 .icon-send {
   width: 32px;
   height: 32px;
-  background-size: cover;
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: flex;
 }
 
 .aviso-chat {
   position: fixed;
-  bottom: 15px;
+  bottom: 20px;
   font-family: "Roboto";
   font-size: .75rem;
   color: #7F909E;
   font-weight: 400;
   text-align: center;
-  margin-top: 10px;
 }
