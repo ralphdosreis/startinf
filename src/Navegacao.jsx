@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
+import { MessageSquare } from 'lucide-react';
+
 const Navegacao = () => {
   const location = useLocation();
   const isChat = location.pathname === '/chat';
@@ -12,6 +14,7 @@ const Navegacao = () => {
           Explorar Tópicos
         </Link>
         <Link className={isChat ? 'botao chat' : 'botao-des chat'} to="/chat">
+          <MessageSquare />
           Chat
         </Link>
       </div>

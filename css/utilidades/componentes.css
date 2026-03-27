@@ -39,7 +39,6 @@
   width: 18px;
   height: 18px;
   margin-right: 5px;
-  background: url('/src/img/icon-chat.svg');
 }
 
 
@@ -58,7 +57,6 @@
   width: 18px;
   height: 18px;
   margin-right: 5px;
-  background: url('/src/img/icon-chat.svg');
 }
 
 .botao-des.topicos::before 
