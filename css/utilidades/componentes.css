@@ -1,11 +1,3 @@
-.container {
-  box-sizing: border-box;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .botao {
   display: flex;
   align-items: center;
@@ -59,20 +51,97 @@
   margin: 0;
 }
 
-.titulo {
-  font-family: "Poppins";
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
+.botao.chat::before 
+{
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url('/src/img/icon-chat.svg');
 }
 
-.subtitulo {
+.botao-des.topicos::before 
+{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url('/src/img/icon-topicos.svg');
+}
+
+.sec-bg {
+  background: #0C1217;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+}
+
+.box-pesquisa {
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  background: #172028;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pesquisa-texto {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background: transparent;
+}
+
+.pesquisa-texto::placeholder {
+  color: #7F909E;
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1.5;
+}
+
+.icon-file {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.icon-send {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.aviso-chat {
+  font-family: "Roboto";
+  font-size: .75rem;
   color: #7F909E;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }

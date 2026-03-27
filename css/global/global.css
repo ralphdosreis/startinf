@@ -26,3 +26,11 @@ img {
   height: auto;
   display: block;
 }
+
+.container {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
