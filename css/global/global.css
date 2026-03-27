@@ -27,9 +27,10 @@ img {
   display: block;
 }
 
- /* fundo da tela de conversa */
-.chat-page {
-  background: #13151a;
-  min-height: 100vh;
-  color: #fff;
+.container {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }

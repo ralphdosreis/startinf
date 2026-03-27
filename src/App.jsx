@@ -10,15 +10,18 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={
-          <>
-            <Header />
-            <Separador />
-            <Navegacao />
-            <Separador />
-            <SectionTopicos />
-          </>
-        } />
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Separador />
+              <Navegacao />
+              <Separador />
+              <SectionTopicos />
+            </>
+          }
+        />
         <Route path="/chat" element={<ChatPage />} />
       </Routes>
     </BrowserRouter>

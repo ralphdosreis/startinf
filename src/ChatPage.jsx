@@ -2,43 +2,29 @@ import React from 'react';
 import Header from './Header';
 import Navegacao from './Navegacao';
 import Separador from './Separador';
+import Titulo from './componentes/Titulo';
+import Subtitulo from './componentes/Subtitulo';
+import BoxPesquisa from './componentes/BoxPesquisa';
 
 const ChatPage = () => {
   return (
-    <div className="chat-page">
+    <>
       <Header />
       <Separador />
       <Navegacao abaAtiva="chat" />
       <Separador />
-      <main className="sec-bg container">
-        <div className="secao">
-          <div class="secao-texto">
-            <h1 class="titulo">
-              Em que etapa da sua <br />
-              startup você está hoje?
-            </h1>
-            <p class="subtitulo">
-              Pergunte qualquer coisa sobre captação de recursos, estratégia de
-              produto, formação de equipe, marketing ou qualquer outro desafio
-              da sua startup.
-            </p>
+      <main className="sec-bg">
+        <div className="secao container">
+          <div className="texto-secao">
+            <Titulo />
+            <Subtitulo texto="Pergunte qualquer coisa sobre captação de recursos, estratégia de produto, formação de equipe, marketing ou qualquer outro desafio da sua startup." />
+          </div>
+          <div className="container-box">
+            <BoxPesquisa />
           </div>
         </div>
-        <div class="pesquisa-box">
-          <a href="">
-            <img src="/src/img/icon-file.svg" alt="" />
-          </a>
-          <input
-            type="text"
-            class="pesquisa-texto"
-            placeholder="Digite sua dúvida sobre seu negócio..."
-          />
-          <a href="">
-            <img src="/src/img/icon-send.svg" alt="" />
-          </a>
-        </div>
       </main>
-    </div>
+    </>
   );
 };
 
