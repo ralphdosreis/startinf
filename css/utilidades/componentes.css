@@ -1,5 +1,6 @@
 .botao {
   display: flex;
+  gap: 6px;
   align-items: center;
   color: #CE5E14;
   background: #232F3A;
@@ -23,6 +24,7 @@
 
 .botao-des {
   display: flex;
+  gap: 6px;
   align-items: center;
   color: #fff;
   font-family: "Poppins";
@@ -50,14 +52,6 @@
   margin: 0;
 }
 
-.botao.chat::before 
-{
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-}
 
 .botao-des.topicos::before 
 {
