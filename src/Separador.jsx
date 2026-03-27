@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Separador = () => {
-  return <hr class="separador-sec" />;
+  return <hr className="separador-sec" />;
 };
 
 export default Separador;

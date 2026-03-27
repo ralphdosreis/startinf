@@ -6,7 +6,7 @@ import Card from './componentes/Card';
 const SectionTopicos = () => {
   return (
     <>
-      <main class="sec-bg">
+      <main className="sec-bg">
         <div className="secao container">
           <div className="texto-secao">
             <Titulo />

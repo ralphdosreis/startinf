@@ -1,0 +1,37 @@
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Aumentei um pouco para melhor leitura */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: .875rem;
+  padding: 10px 20px;
+  background-color: #172028;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none; /* Caso use <Link> */
+  transition: all 0.2s ease;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  background-color: currentColor; 
+  
+  /* Garante que o recorte use a transparência do arquivo */
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+}
+
+/* Estado Ativo */
+.nav-button.active {
+  background-color: #232F3A;
+  color: #CE5E14; /* Isso mudará o texto e o ícone (devido ao currentColor) */
+}

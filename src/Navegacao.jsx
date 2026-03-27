@@ -1,19 +1,28 @@
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'; // IMPORTAÇÃO CORRETA
+import NavButton from './componentes/NavButton';
+
+import iconTopicos from './img/icon-topicos.svg';
+import iconChat from './img/icon-chat.svg';
 
 const Navegacao = () => {
   const location = useLocation();
-  const isChat = location.pathname === '/chat';
 
   return (
     <section className="nav-bg">
       <div className="nav container">
-        <Link className={isChat ? 'botao-des topicos' : 'botao topicos'} to="/">
-          Explorar Tópicos
-        </Link>
-        <Link className={isChat ? 'botao chat' : 'botao-des chat'} to="/chat">
-          Chat
-        </Link>
+        <NavButton
+          label="Explorar Tópicos"
+          iconPath={iconTopicos}
+          to="/"
+          isActive={location.pathname === '/'}
+        />
+        <NavButton
+          label="Chat"
+          iconPath={iconChat}
+          to="/chat"
+          isActive={location.pathname === '/chat'}
+        />
       </div>
     </section>
   );

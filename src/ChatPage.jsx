@@ -5,6 +5,7 @@ import Separador from './Separador';
 import Titulo from './componentes/Titulo';
 import Subtitulo from './componentes/Subtitulo';
 import BoxPesquisa from './componentes/BoxPesquisa';
+import Aviso from './componentes/Aviso';
 
 const ChatPage = () => {
   return (
@@ -21,6 +22,7 @@ const ChatPage = () => {
           </div>
           <div className="container-box">
             <BoxPesquisa />
+            <Aviso />
           </div>
         </div>
       </main>

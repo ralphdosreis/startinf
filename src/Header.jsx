@@ -3,9 +3,9 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <header class="header-bg">
-        <div class="header container">
-          <div class="logo">
+      <header className="header-bg">
+        <div className="header container">
+          <div className="logo">
             <a href="./index.html">
               <img
                 src="/src/img/icon-logo.svg"
@@ -20,12 +20,12 @@ const Header = () => {
             </div>
           </div>
           <nav>
-            <ul class="header-menu">
+            <ul className="header-menu">
               <li>
                 <a href="">Entrar</a>
               </li>
               <li>
-                <a class="botao input" href="">
+                <a className="botao input" href="">
                   Cadastrar
                 </a>
               </li>

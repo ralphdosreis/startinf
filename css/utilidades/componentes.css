@@ -1,74 +1,9 @@
-.botao {
-  display: flex;
-  align-items: center;
-  color: #CE5E14;
-  background: #232F3A;
-  border-radius: 5px;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: .875rem;
-  line-height: 1;
-  padding: .625rem 1.25rem;
-  max-width: max-content;
-}
-
-.botao.topicos::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  background: url('/src/img/icon-topicos.svg');
-}
-
-.botao-des {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: .875rem;
-  line-height: 1;
-  padding: .625rem 1.25rem;
-  max-width: max-content;
-}
-
-.botao-des.chat::before {
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-  background: url('/src/img/icon-chat.svg');
-}
-
-
 .separador-sec {
   height: 1px;
   border: none;
   background: #232F3A;
   width: 100%;
   margin: 0;
-}
-
-.botao.chat::before 
-{
-  content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
-  background: url('/src/img/icon-chat.svg');
-}
-
-.botao-des.topicos::before 
-{
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  background: url('/src/img/icon-topicos.svg');
 }
 
 .sec-bg {
@@ -82,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
   margin: 20px auto;
 }
 
@@ -138,6 +73,8 @@
 }
 
 .aviso-chat {
+  position: fixed;
+  bottom: 15px;
   font-family: "Roboto";
   font-size: .75rem;
   color: #7F909E;

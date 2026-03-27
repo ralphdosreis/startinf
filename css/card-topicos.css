@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
   margin: auto;
-  gap: 15px;
+  gap: 20px;
 }
 
 .titulo-card {
