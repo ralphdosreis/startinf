@@ -1,9 +1,20 @@
+.sec-bg {
+  background: #0C1217;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sec-topicos {
+  padding-top: 20px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
   margin: auto;
-  gap: 15px;
+  gap: 20px;
 }
 
 .titulo-card {
@@ -24,10 +35,9 @@
 }
 
 .container-card {
-  width: 370px;
+  width: 340px;
   background: #161F27;
   border-radius: 20px;
   border: 1px solid #3C4751;
-  cursor: pointer;
   padding: 20px;
 }
