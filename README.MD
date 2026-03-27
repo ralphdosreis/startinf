@@ -1,6 +1,6 @@
 # 💻 Frontend - Chatbot StartINF
 
-## 🛠️ Como rodar os projetos localmente
+## 🛠️ Como rodar o projeto localmente
 
 1.  Clone o repositório:
     ```bash
