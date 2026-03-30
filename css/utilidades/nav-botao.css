@@ -6,9 +6,10 @@
   font-weight: 600;
   font-size: .875rem;
   padding: 10px 20px;
+    border-radius: 4px;
   background-color: #172028;
   color: #FFFFFF;
-  border-radius: 4px;
+
   text-decoration: none; /* Caso use <Link> */
   transition: all 0.2s ease;
 }

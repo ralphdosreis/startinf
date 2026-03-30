@@ -3,10 +3,12 @@ import Titulo from './componentes/Titulo';
 import Subtitulo from './componentes/Subtitulo';
 import BoxPesquisa from './componentes/BoxPesquisa';
 import Aviso from './componentes/Aviso';
+import SideBar from './componentes/SideBar';
 
 const ChatPage = () => {
   return (
     <main className="sec-bg">
+      <SideBar />
       <div className="secao container">
         <div className="texto-secao">
           <Titulo />

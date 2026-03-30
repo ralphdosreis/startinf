@@ -1,0 +1,37 @@
+.sidebar {
+  width: 70px;
+  height: calc(100vh - 120px);
+  background: #172028;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.menu-button {
+  content: '';
+  width: 20px;
+  height: 3px;
+  background: #7F909E;
+  display: inline-block;
+  box-shadow: 0 5px #7F909E, 0 -5px #7F909E;
+  transition: transform .3s;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
