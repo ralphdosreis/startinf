@@ -2,9 +2,7 @@ import React from 'react';
 
 const Subtitulo = ({ texto }) => {
   return (
-    <>
-      <p className="subtitulo">{texto}</p>
-    </>
+    <p className="subtitulo">{texto}</p>
   );
 };
 

@@ -9,29 +9,92 @@
   padding: 20px 0;
 }
 
+.sidebar.open {
+  width: 280px;
+  align-items: start;
+  padding-left: 25px;
+}
+
+.sidebar.open .menu-button {
+  transform: rotate(180deg);
+}
+
 .sidebar-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
-  margin-top: 20px;
+  gap: 30px;
+  margin-top: 32px;
 }
 
-.menu-button {
-  content: '';
+.sidebar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-pesquisa {
   width: 20px;
-  height: 3px;
-  background: #7F909E;
-  display: inline-block;
-  box-shadow: 0 5px #7F909E, 0 -5px #7F909E;
-  transition: transform .3s;
+  height: 20px;
+  position: fixed;
+  left: 230px;
   cursor: pointer;
-  border-radius: 50px;
+}
+
+.mens-temp-container {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  left: 230px;
+  cursor: pointer;
+}
+
+.menu-button.rotate-r {
+  transform: rotate(180deg);
+  transition: transform .3s;
+}
+
+.menu-button.rotate-l {
+  transform: rotate(0deg);
+  transition: transform .3s;
+}
+
+.new-chat {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.new-chat-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.new-chat-content {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.texto-sidebar {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7F909E;
 }
 
 .sidebar-bottom {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  gap: 5px;
+}
+
+.config {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }

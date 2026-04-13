@@ -6,8 +6,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   align-items: center;
 }
 
-
+.nav-esquerda {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}

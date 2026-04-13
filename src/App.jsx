@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import SectionTopicos from './SectionTopicos';
 import ChatPage from './ChatPage';
+import PainelAdmin from './PainelAdmin';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Route index element={<SectionTopicos />} />
           <Route path="chat" element={<ChatPage />} />
         </Route>
+        <Route path="/admin" element={<PainelAdmin />} />
       </Routes>
     </BrowserRouter>
   );

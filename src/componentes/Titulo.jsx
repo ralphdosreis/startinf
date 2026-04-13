@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Titulo = () => {
+const Titulo = ({ texto }) => {
   return (
-    <h1 className="titulo">Em que etapa da sua startup você está hoje?</h1>
+    <h1 className="titulo">{texto}</h1>
   );
 };
 

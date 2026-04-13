@@ -11,6 +11,12 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 ul {
   padding: 0px;
   list-style: none;

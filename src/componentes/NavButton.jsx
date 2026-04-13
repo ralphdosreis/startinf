@@ -2,13 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/utilidades/nav-botao.css';
 
-const NavButton = ({ label, iconPath, to, isActive }) => {
+const NavButton = ({ label, iconPath, to, isActive, onClick }) => {
   return (
-    <Link to={to} className={`nav-button ${isActive ? 'active' : ''}`}>
+    <Link to={to} className={`nav-button ${isActive ? 'active' : ''}`}  onClick={(e) => {
+        if(!to || to === '') {
+          e.preventDefault();
+        }
+        if (onClick) {
+          onClick(e);
+        }
+      }}>
       <div
         className="nav-icon"
         style={{
-          // Importante: use as aspas simples em volta da variável iconPath
           WebkitMaskImage: `url("${iconPath}")`,
           maskImage: `url("${iconPath}")`,
         }}

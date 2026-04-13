@@ -5,3 +5,7 @@
 @import "/css/navegação.css";
 @import "/css/card-topicos.css";
 @import "/css/componentes/sidebar.css";
+
+@import "/css/componentes/sidebar.css";
+@import "/css/componentes/documentos-sidebar.css";
+@import "/css/componentes/painel-admin.css";

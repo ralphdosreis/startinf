@@ -1,4 +1,5 @@
 .cards {
+  position: calc(100vh - 180px);
   display: grid;
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
@@ -28,5 +29,6 @@
   background: #161F27;
   border-radius: 20px;
   border: 1px solid #3C4751;
+  cursor: pointer;
   padding: 20px;
 }
