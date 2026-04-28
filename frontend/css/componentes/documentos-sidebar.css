@@ -1,0 +1,345 @@
+.documentos-sidebar {
+  width: 0;
+  height: calc(100vh - 131px);
+  background: #172028;
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  z-index: 100;
+  opacity: 0;
+  border: 1px solid #232F3A;
+  border-right: none;
+  border-bottom: none;
+  transition: width 0.3s ease, opacity 0.3s;
+  overflow: hidden;
+}
+
+.documentos-sidebar.open {
+  width: 340px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.documentos-botoes {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid #425160;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: .875rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
+}
+
+.btn-upload:hover {
+  transform: translateY(-2px);
+  background: #232F3A;
+}
+
+.btn-upload:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.documentos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.documentos-contador {
+  background: #232F3A;
+  padding: 6px 9px;
+  border-radius: 50%;
+  color: #7F909E;
+  font-family: "Roboto", sans-serif;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+/* Abas */
+.tabs-list {
+  display: flex;
+  padding: 4px;
+  margin: 0 20px;
+  background: #0C1217;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tab-trigger {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-trigger:hover {
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-trigger.active {
+  color: #fff;
+  background: #232F3A;
+}
+
+/* Área de Rolagem e Cards */
+.documentos-lista {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.documentos-lista::-webkit-scrollbar {
+  width: 6px;
+}
+
+.documentos-lista::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.documentos-lista::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.documentos-lista::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Empty State */
+.empty-docs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #555;
+  padding: 40px 20px;
+}
+
+.empty-icon {
+  margin-bottom: 20px;
+  opacity: 0.8;
+  color: #CE5E14;
+  filter: drop-shadow(0 0 16px rgba(139, 92, 246, 0.5));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.empty-docs p {
+  color: #e2e8f0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
+.empty-docs span {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Documento Card */
+.documento-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.documento-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.documento-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.documento-card:hover::before {
+  opacity: 1;
+}
+
+.documento-card-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.documento-icon {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.documento-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.documento-nome {
+  font-size: 14px;
+  color: #f8fafc;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+  transition: color 0.2s;
+  letter-spacing: -0.2px;
+}
+
+.documento-card:hover .documento-nome {
+  color: #fff;
+}
+
+.documento-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.documento-meta {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 4px;
+}
+
+.documento-tag-ai {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.15);
+  padding: 4px 10px;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  align-self: flex-start;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.1);
+}
+
+/* Hover Actions */
+.documento-acoes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.documento-card:hover .documento-acoes {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.btn-action {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transform: scale(1.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-action.trash:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}

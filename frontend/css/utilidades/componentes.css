@@ -1,0 +1,101 @@
+.separador-sec {
+  height: 1px;
+  border: none;
+  background: #232F3A;
+  width: 100%;
+  margin: 0;
+}
+
+.sec-bg {
+  background: #0f1117;
+  height: calc(100vh - 131px);
+  display: flex;
+}
+
+.secao-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.secao-topicos {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 40px;
+  min-height: calc(100vh - 131px);
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+}
+
+.box-pesquisa {
+  position: fixed;
+  bottom: 45px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  background: #172028;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+
+.pesquisa-texto {
+  color: #fff;
+  flex: 1;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background: transparent;
+}
+
+.pesquisa-texto::placeholder {
+  color: #7F909E;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.icon-file {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.icon-send {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+}
+
+.aviso-chat {
+  position: fixed;
+  bottom: 20px;
+  font-family: "Roboto";
+  font-size: .75rem;
+  color: #7F909E;
+  font-weight: 400;
+  text-align: center;
+}

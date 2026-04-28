@@ -1,0 +1,21 @@
+.nav-bg {
+  background: #172028;
+}
+
+.nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-esquerda {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-direita.com-sidebar {
+  transition: margin-right 0.3s ease;
+}

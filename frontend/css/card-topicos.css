@@ -1,0 +1,40 @@
+.cards {
+  position: calc(100vh - 180px);
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.titulo-card {
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.texto-card {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #7F909E;
+  font-weight: 400;
+}
+
+.container-card {
+  width: 370px;
+  background: #161F27;
+  border-radius: 20px;
+  border: 1px solid #3C4751;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.container-card:hover {
+  background-color: #232F3A;
+  border: 1px solid #7F909E;
+  transition: 0.3s;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+  display: grid;
+}
+
+.label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: .875rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: .875rem;
+  padding: 10px;
+  border: 1px solid #525561;
+  border-radius: 4px;
+  width: 100%;
+  background: #15181E;
+  color: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #CE5E14;
+}
